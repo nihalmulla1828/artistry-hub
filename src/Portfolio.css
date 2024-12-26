@@ -1,0 +1,126 @@
+.portfolio-container {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .portfolio-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .portfolio-header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .portfolio-details h2 {
+    margin: 10px 0;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .portfolio-gallery-heading {
+    margin: 20px 0;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .portfolio-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  /* Calendar Section */
+.calendar-container {
+  margin-top: 30px;
+}
+
+.react-calendar {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.react-calendar__tile {
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.react-calendar__tile--active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.react-calendar__tile.available-date {
+  background-color: #c8e6c9;
+}
+
+.react-calendar__tile.unavailable-date {
+  background-color: #ffcdd2;
+}
+
+.time-slots {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.time-slot {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.time-slot.available-slot {
+  background-color: #a5d6a7;
+  color: #2e7d32;
+}
+
+.time-slot.unavailable-slot {
+  background-color: #ef9a9a;
+  color: #b71c1c;
+}
+.send-message-btn {
+  background-color: #007BFF; /* Primary blue color */
+  color: #ffffff; /* White text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 12px 24px; /* Padding for good size */
+  font-size: 16px; /* Text size */
+  font-weight: 600; /* Make text bold */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s, transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+.send-message-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.send-message-btn:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Add a focus ring for accessibility */
+}
+
+.send-message-btn:active {
+  background-color: #004085; /* Even darker blue when clicked */
+  transform: scale(1); /* Return to original size */
+}

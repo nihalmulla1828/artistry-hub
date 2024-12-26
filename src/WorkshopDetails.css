@@ -1,0 +1,42 @@
+/* WorkshopDetails.css */
+.workshop-details {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .workshop-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .workshop-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .workshop-date {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .workshop-description {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  
+  .book-now-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .book-now-button:hover {
+    background-color: #218838;
+  }
+  

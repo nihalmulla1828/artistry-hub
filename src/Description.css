@@ -1,0 +1,89 @@
+.description-section {
+    display: flex; /* Flexbox for layout */
+    margin: 40px auto; /* Add more margin for spacing */
+    max-width: 1200px; /* Restrict width to make it look more structured */
+    gap: 20px; /* Space between carousel and description */
+}
+
+.carousel {
+    flex: 1; /* Carousel takes available space */
+    position: relative; /* For absolute positioning of images */
+    overflow: hidden; /* Hide overflowing images */
+    border-radius: 8px; /* Rounded corners for carousel */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for a more modern look */
+}
+
+.carousel-images {
+    display: flex; /* Arrange images in a row */
+    transition: transform 0.5s ease-in-out; /* Smooth sliding transition */
+}
+
+.carousel-images img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: none; /* Hide all images by default */
+    border-radius: 8px; /* Apply rounded corners to images */
+}
+
+.carousel-images img.active {
+    display: block; /* Show active image */
+}
+
+.description {
+    flex: 1; /* Allow description to take up space */
+    padding: 30px; /* More padding for better readability */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow around description */
+}
+
+.description-heading {
+    font-size: 2.8rem; /* Slightly larger font size */
+    font-weight: 600; /* Medium-bold text */
+    color: #333; /* Dark color for heading */
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    position: relative; /* Position for the underline pseudo-element */
+    letter-spacing: 1px; /* Slightly spaced letters for a modern look */
+}
+
+.description-heading::after {
+    content: ''; /* Pseudo-element for the underline */
+    display: block; /* Make it a block element */
+    width: 60%; /* Wider underline for more emphasis */
+    height: 4px; /* Height of the underline */
+    background-color: #007bff; /* Primary blue color for the underline */
+    margin: 15px auto 0; /* Center the underline */
+    border-radius: 2px; /* Rounded edges */
+}
+
+.description p {
+    margin: 15px 0; /* Add margin for better spacing */
+    line-height: 1.7; /* Improved readability with increased line height */
+    font-size: 1.2rem; /* Slightly larger font size for paragraph */
+    color: #555; /* Lighter gray color for text */
+    font-weight: 400; /* Normal weight for paragraph text */
+}
+
+@media (max-width: 768px) {
+    .description-section {
+        flex-direction: column; /* Stack carousel and description vertically on smaller screens */
+        gap: 15px; /* Adjust gap for smaller screens */
+    }
+
+    .carousel {
+        height: 300px; /* Limit height for mobile view */
+    }
+
+    .description {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .description-heading {
+        font-size: 2rem; /* Reduce font size for smaller screens */
+    }
+
+    .description p {
+        font-size: 1rem; /* Reduce font size for smaller screens */
+    }
+}

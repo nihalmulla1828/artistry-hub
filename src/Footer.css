@@ -1,0 +1,53 @@
+.footer {
+    background-color: #282c34; /* Dark background for footer */
+    color: #ffffff; /* White text color */
+    padding: 40px 20px; /* Padding for footer */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center items */
+}
+
+.footer-container {
+    display: flex; /* Flexbox for sections */
+    justify-content: space-between; /* Space between sections */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Max width for content */
+}
+
+.footer-section {
+    flex: 1; /* Allow sections to grow */
+    margin: 0 20px; /* Margin between sections */
+}
+
+.footer-heading {
+    font-size: 1.5rem; /* Font size for headings */
+    margin-bottom: 15px; /* Space below heading */
+    text-transform: uppercase; /* Uppercase for headings */
+    border-bottom: 2px solid #007bff; /* Underline effect */
+    padding-bottom: 5px; /* Space below underline */
+}
+
+.footer-list {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+}
+
+.footer-list li {
+    margin: 10px 0; /* Margin for list items */
+}
+
+.footer-list a {
+    color: #ffffff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Transition for hover effect */
+}
+
+.footer-list a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Space above bottom text */
+    text-align: center; /* Center text */
+    font-size: 0.9rem; /* Smaller font size */
+}

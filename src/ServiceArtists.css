@@ -1,0 +1,94 @@
+/* ServiceArtists.css */
+.artists-container {
+    padding: 40px;
+    text-align: center;
+    background-color: #f4f4f9; /* Light background to make content stand out */
+}
+
+.artists-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray for a professional look */
+    font-weight: 600; /* Add some emphasis */
+}
+
+.artists-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.artist-card {
+    background-color: #ffffff; /* White background for the card */
+    border: 1px solid #e0e0e0; /* Soft border to give a clean separation */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.artist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+}
+
+.artist-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover; /* Ensures the image is not distorted */
+    border: 3px solid #f1f1f1; /* Soft border around the image */
+}
+
+.artist-name {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    color: #333; /* Dark gray text for the name */
+    font-weight: 500; /* Medium weight for name */
+}
+
+.artist-location {
+    color: #777; /* Light gray for the location */
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.view-profile-button {
+    background-color: #ff6f61; /* Coral color for the button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 25px; /* Rounded corners for a modern look */
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-profile-button:hover {
+    background-color: #e55b50; /* Darker shade of coral for hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.view-profile-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.5); /* Glow effect when focused */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .artists-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .artist-card {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,145 @@
+/* Container for the entire form */
+.registration-form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+.registration-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Group for each input field */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+.form-group label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Styling for text, email, password, and url inputs */
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group input[type='password'],
+.form-group input[type='url'] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type='text']:focus,
+.form-group input[type='email']:focus,
+.form-group input[type='password']:focus,
+.form-group input[type='url']:focus {
+  border-color: #007bff;
+}
+
+/* Styling for radio button container */
+.form-group div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-group input[type='radio'] {
+  margin-right: 10px;
+}
+
+/* Button styling */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .registration-form {
+    padding: 20px;
+  }
+
+  .registration-form h2 {
+    font-size: 20px;
+  }
+}
+/* Styling for the radio button container */
+.form-group div {
+  display: flex;
+  align-items: center;
+  gap: 20px;  /* Adds space between the radio buttons and their labels */
+}
+
+/* Hide the default radio button and style it with a custom one */
+.form-group input[type="radio"] {
+  appearance: none; /* Removes default styling */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  width: 20px; /* Size of the custom radio button */
+  height: 20px; /* Size of the custom radio button */
+  border-radius: 50%; /* Circular shape */
+  border: 2px solid #007bff; /* Blue border color */
+  background-color: white; /* White background for the radio button */
+  margin-right: 10px; /* Space between button and label */
+  cursor: pointer; /* Pointer cursor to indicate it's clickable */
+  transition: all 0.3s ease; /* Smooth transition for interactions */
+}
+
+/* Styling when the radio button is checked */
+.form-group input[type="radio"]:checked {
+  background-color: #007bff; /* Blue background when selected */
+  border-color: #0056b3; /* Darker blue border when selected */
+}
+
+/* Add a pseudo-element for the "checked" state */
+.form-group input[type="radio"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px; /* Inner circle size */
+  height: 10px; /* Inner circle size */
+  background-color: white; /* White inner circle */
+  border-radius: 50%; /* Circular inner circle */
+}
+
+/* Optional: Styling the label to make it visually appealing */
+.form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer; /* Pointer cursor to indicate the label is clickable */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for the labels */
+.form-group label:hover {
+  color: #007bff; /* Change text color to blue on hover */
+}
